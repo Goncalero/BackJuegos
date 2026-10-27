@@ -11,14 +11,14 @@ public class Juego {
     private String nombre;
     private String autor;
     private String tipo;
-    private int jugadores;
-    private double precio;
+    private String jugadores; 
+    private String precio;   
     private String imagen;
 
     public Juego() {
     }
 
-    public Juego(String nombre, String autor, String tipo, int jugadores, double precio, String imagen) {
+    public Juego(String nombre, String autor, String tipo, String jugadores, String precio, String imagen) {
         this.nombre = nombre;
         this.autor = autor;
         this.tipo = tipo;
@@ -40,11 +40,11 @@ public class Juego {
     public String getTipo() { return tipo; }
     public void setTipo(String tipo) { this.tipo = tipo; }
 
-    public int getJugadores() { return jugadores; }
-    public void setJugadores(int jugadores) { this.jugadores = jugadores; }
+    public String getJugadores() { return jugadores; }
+    public void setJugadores(String jugadores) { this.jugadores = jugadores; }
 
-    public double getPrecio() { return precio; }
-    public void setPrecio(double precio) { this.precio = precio; }
+    public String getPrecio() { return precio; }
+    public void setPrecio(String precio) { this.precio = precio; }
 
     public String getImagen() { return imagen; }
     public void setImagen(String imagen) { this.imagen = imagen; }

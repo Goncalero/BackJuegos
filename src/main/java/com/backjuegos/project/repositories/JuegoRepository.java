@@ -6,4 +6,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface JuegoRepository extends MongoRepository<Juego, String> {
+    
+    
+    boolean existsByNombre(String nombre);
+    
 }
