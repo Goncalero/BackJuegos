@@ -1,0 +1,51 @@
+package com.backjuegos.project.entities;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "juegos")
+public class Juego {
+
+    @Id
+    private String id;
+    private String nombre;
+    private String autor;
+    private String tipo;
+    private int jugadores;
+    private double precio;
+    private String imagen;
+
+    public Juego() {
+    }
+
+    public Juego(String nombre, String autor, String tipo, int jugadores, double precio, String imagen) {
+        this.nombre = nombre;
+        this.autor = autor;
+        this.tipo = tipo;
+        this.jugadores = jugadores;
+        this.precio = precio;
+        this.imagen = imagen;
+    }
+
+    // Getters y Setters
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
+
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+
+    public String getAutor() { return autor; }
+    public void setAutor(String autor) { this.autor = autor; }
+
+    public String getTipo() { return tipo; }
+    public void setTipo(String tipo) { this.tipo = tipo; }
+
+    public int getJugadores() { return jugadores; }
+    public void setJugadores(int jugadores) { this.jugadores = jugadores; }
+
+    public double getPrecio() { return precio; }
+    public void setPrecio(double precio) { this.precio = precio; }
+
+    public String getImagen() { return imagen; }
+    public void setImagen(String imagen) { this.imagen = imagen; }
+}
